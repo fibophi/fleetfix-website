@@ -1,0 +1,137 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-barlow-condensed), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* Asphalt & Hi-Vis palette */
+  --color-asphalt: #15191d;
+  --color-asphalt-2: #1c2227;
+  --color-steel: #2a3239;
+  --color-concrete: #ece9e3;
+  --color-concrete-2: #f6f4ef;
+  --color-paper: #fbfaf7;
+  --color-hivis: #ffb400;
+  --color-hivis-deep: #f59e00;
+  --color-ink: #13171b;
+  --color-offwhite: #f4f3ef;
+  --color-muted2: #9ba4ac;
+  --color-muted-dark: #5e6a72;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: light;
+  --background: #fbfaf7;
+  --foreground: #13171b;
+  --card: #ffffff;
+  --card-foreground: #13171b;
+  --primary: #15191d;
+  --primary-foreground: #f4f3ef;
+  --secondary: #ece9e3;
+  --secondary-foreground: #15191d;
+  --muted: #ece9e3;
+  --muted-foreground: #5e6a72;
+  --accent: #ffb400;
+  --accent-foreground: #13171b;
+  --destructive: #b91c1c;
+  --border: rgba(19, 23, 27, 0.12);
+  --input: rgba(19, 23, 27, 0.15);
+  --ring: #ffb400;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  /* Diagonal hazard-stripe divider */
+  .hazard-stripe {
+    background-image: repeating-linear-gradient(
+      135deg,
+      var(--color-hivis) 0,
+      var(--color-hivis) 22px,
+      var(--color-asphalt) 22px,
+      var(--color-asphalt) 44px
+    );
+  }
+
+  /* Pulsing beacon dot */
+  .beacon {
+    position: relative;
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 9999px;
+    background: var(--color-hivis);
+  }
+  .beacon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: var(--color-hivis);
+    animation: beacon-pulse 1.8s ease-out infinite;
+  }
+
+  @keyframes beacon-pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .beacon::after {
+    animation: none;
+  }
+}
