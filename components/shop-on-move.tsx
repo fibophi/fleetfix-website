@@ -4,13 +4,13 @@ const CARDS = [
   {
     icon: Siren,
     title: 'Emergency roadside',
-    copy: 'Six mobile units running 24/7 for breakdowns, blowouts, brakes and air faults. We carry the parts to fix most jobs on the spot — or get you safely towed to our bay.',
+    copy: 'Eight mobile units running 24/7 for breakdowns, blowouts, brakes and air faults. We carry the parts to fix most jobs on the spot — or get you safely towed to our bay.',
     tag: 'Answered any hour',
   },
   {
     icon: ClipboardCheck,
-    title: 'On-site MTO inspections',
-    copy: 'Certified to perform annual truck & trailer safety inspections with our mobile units — at your yard. Your equipment stays put and stays earning.',
+    title: 'On-site trailer safeties',
+    copy: 'Certified to perform annual trailer safety inspections with our mobile units — at your yard. Truck safeties are done in-shop, but off-site truck repairs come to you.',
     tag: 'Few in Ontario can',
   },
   {

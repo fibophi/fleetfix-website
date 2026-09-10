@@ -4,7 +4,7 @@ const BADGES = [
   {
     icon: ShieldCheck,
     title: 'MTO-certified',
-    copy: 'Authorized for annual safety inspections — including off-site at your yard.',
+    copy: 'Authorized for annual safety inspections — including trailer safeties off-site at your yard.',
   },
   {
     icon: BadgeCheck,
@@ -26,7 +26,7 @@ export function About() {
           About FleetFix
         </p>
         <h2 className="mt-3 max-w-3xl font-heading text-[clamp(28px,4.5vw,44px)] font-bold uppercase leading-tight text-balance">
-          From one truck to six in five years.
+          From one truck to eight in five years.
         </h2>
 
         <div className="mt-8 grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
@@ -38,7 +38,7 @@ export function About() {
               </strong>{' '}
               and a simple promise: show up fast, fix it right, charge fairly.
               Today we run{' '}
-              <strong className="font-bold text-ink">six mobile units</strong>{' '}
+              <strong className="font-bold text-ink">eight mobile units</strong>{' '}
               and a full shop in Mississauga, serving owner-operators and fleets
               across Southern Ontario.
             </p>
@@ -48,15 +48,15 @@ export function About() {
               <strong className="font-bold text-ink">
                 MTO-certified, fully insured, and committed to fair, honest work
               </strong>{' '}
-              — including the rare authorization to perform annual safety
-              inspections off-site, at your yard.
+              — including the rare authorization to perform annual trailer
+              safety inspections off-site, at your yard.
             </p>
           </div>
 
           {/* Growth element */}
           <div className="flex flex-col items-center justify-center rounded-2xl border border-ink/10 bg-asphalt p-8 text-center text-offwhite">
             <span className="font-heading text-6xl font-extrabold uppercase text-hivis sm:text-7xl">
-              1 → 6
+              1 → 8
             </span>
             <span className="mt-2 font-mono text-sm uppercase tracking-wider text-muted2">
               service trucks in 5 years

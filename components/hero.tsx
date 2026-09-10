@@ -41,7 +41,7 @@ export function Hero() {
               <span className="text-[0.7em]">✅</span> Fleet Maintenance Programs
             </li>
             <li className="min-[921px]:whitespace-nowrap">
-              <span className="text-[0.7em]">✅</span> MTO Safety Inspections —{' '}
+              <span className="text-[0.7em]">✅</span> Mobile Trailer Safeties —{' '}
               <span className="text-hivis">AT YOUR YARD</span>
             </li>
           </ul>
@@ -49,12 +49,14 @@ export function Hero() {
           {/* Lede */}
           <p className="mt-7 max-w-2xl text-base leading-relaxed text-concrete sm:text-lg">
             We&apos;re one of the select few in Ontario certified to perform
-            annual safety inspections with our mobile units{' '}
+            annual <strong className="font-bold text-hivis">trailer</strong>{' '}
+            safety inspections with our mobile units{' '}
             <strong className="font-bold text-hivis">
               — right in your yard.
             </strong>{' '}
-            No shunting equipment to a shop. No lost truck-days. Plus 24/7
-            emergency roadside and scheduled maintenance, all from one team.
+            Truck safeties are done in our Mississauga shop, but we still come to
+            you for off-site truck repairs. Plus 24/7 emergency roadside and
+            scheduled maintenance, all from one team.
           </p>
 
           {/* Dispatch card */}
