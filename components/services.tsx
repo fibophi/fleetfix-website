@@ -14,15 +14,15 @@ import {
 const FEATURED = {
   icon: ShieldCheck,
   title: 'Annual Safety Inspections',
-  copy: 'MTO-certified truck & trailer annual inspections — in our shop or, uniquely, at your yard with our mobile units.',
-  tag: 'In-shop or on-site',
+  copy: 'MTO-certified annual inspections: trucks in our shop, and — uniquely — trailers at your yard with our mobile units.',
+  tag: 'Trucks in-shop · trailers on-site',
 }
 
 const SERVICES = [
   {
     icon: Siren,
     title: '24/7 Mobile Roadside',
-    copy: 'Six units across Southern Ontario for breakdowns, blowouts and emergency repairs — any hour.',
+    copy: 'Eight units across Southern Ontario for breakdowns, blowouts and emergency repairs — any hour.',
     href: '#inspections',
   },
   {

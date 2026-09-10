@@ -1,7 +1,7 @@
 import { Truck } from 'lucide-react'
 
 const SERVICES = [
-  'On-site MTO inspections',
+  'On-site trailer safeties',
   'Fleet maintenance',
   'Mobile roadside',
   'PM service',
@@ -25,7 +25,8 @@ export function SiteFooter() {
             </div>
             <p className="mt-4 max-w-xs leading-relaxed text-muted2">
               24/7 mobile and in-shop truck &amp; trailer repair. MTO-certified
-              for on-site annual safety inspections across Southern Ontario.
+              for on-site annual trailer safeties and in-shop truck safeties
+              across Southern Ontario.
             </p>
           </div>
 

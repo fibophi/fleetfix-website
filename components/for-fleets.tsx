@@ -1,7 +1,7 @@
 import { Check, Phone } from 'lucide-react'
 
 const COVERS = [
-  'On-site annual safety inspections, trucks & trailers',
+  'On-site annual trailer safeties; truck safeties in-shop',
   'Scheduled preventative maintenance on your cycle',
   'Brakes, tires, oil & fluids handled in the same visit',
   '24/7 roadside priority when a unit goes down',

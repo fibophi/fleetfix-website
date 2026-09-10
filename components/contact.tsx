@@ -9,8 +9,9 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_ME'
 const EQUIPMENT = ['Truck', 'Trailer', 'Both', 'Fleet']
 const NEEDS = [
   'Roadside / emergency',
-  'Annual safety inspection',
-  'On-site fleet inspections',
+  'Trailer safety (on-site available)',
+  'Truck safety (in-shop)',
+  'Off-site truck repair',
   'PM / scheduled maintenance',
   'Shop repair',
   'Brakes',

@@ -1,8 +1,8 @@
 const STATS = [
   { value: '24/7', label: 'Roadside dispatch' },
-  { value: '6', label: 'Mobile units' },
+  { value: '8', label: 'Mobile units' },
   { value: 'MTO', label: 'Certified inspections' },
-  { value: '1→6', label: 'Trucks in 5 years' },
+  { value: '1→8', label: 'Trucks in 5 years' },
 ]
 
 export function TrustStrip() {
